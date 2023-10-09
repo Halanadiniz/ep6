@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function josefa(){
+            fernanda.value = parseInt(arara1.value) + parseInt(arara2.value);
+        }
+        function diminuir(){
+            fernanda.value = parseInt(arara1.value) - parseInt(arara2.value);
+        }
+        function multiplicacao(){
+            fernanda.value = parseInt(arara1.value) * parseInt(arara2.value);
+        }
+        function divisao(){
+            if(arara2.value ==0){
+                alert("nao pode dividir por zero");
+                arara1.value = 0;
+            }
+            else {
+                fernanda.value = parseInt(arara1.value) / parseInt(arara2.value);
+            }
+        }
+
+    </script>
+    <h1>calculo de soma:</h1>
+    valor1: <input type="text" id="arara1" value="0"><br>
+    valor2: <input type="text" id="arara2" value="0"><br>
+    <input type="button" value="somar" onclick="josefa()"><br>
+    <input type="button" value="diminuir" onclick="diminuir()"><br>
+    <input type="button" value="multiplicacao" onclick="multiplicacao()"><br>
+    <input type="button" value="dividir" onclick="divisao()"><br>
+    resultado: <input type="text" id="fernanda" value="0">
+</body>
+</html>
