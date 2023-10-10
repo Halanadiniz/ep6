@@ -7,31 +7,14 @@
 </head>
 <body>
     <form>
+        <script src="script.js"></script>
+
         ache a raiz<br>
         a= <input type="text" id="vara" value="0"><br>
-        b= <input type="text" id="varb" value="5"><br>
+        b= <input type="text" id="varb" value="0"><br>
         <br>
         c= <input type="text" id="varc" value="0"><br>
         <button type="button" onclick="equacao()">calcular</button>
     </form>
-    <script>
-        function equacao(){
-    var a = vara.value;
-    var b = varb.value;
-    var c = varc.value;
-
-    var resposta = b+a;
-     
-    if(a == 0){
-        alert("a deve ser diferente de 0");
-    }
-    else{
-        if(c == resposta){
-            alert("acertou");
-        }
-    }
-}
-
-    </script>
 </body>
 </html>
